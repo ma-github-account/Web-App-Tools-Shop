@@ -1,0 +1,78 @@
+{% extends "tools/base.html" %}
+{% load static %}
+
+{% block title %}
+	Tool details
+{% endblock %}
+
+{% block content %}
+	<div class="contact-detail">
+		<h3>Tool details:</h3>
+		<span class="input-group-btn">
+			<button type="submit" class="btn btn-default" id="edit-btn">EDIT</button>
+		</span>
+		<span class="input-group-btn">
+			<button hidden type="submit" class="btn btn-default" id="save-btn">SAVE</button>
+		</span>
+		<span class="input-group-btn">
+			<button hidden type="submit" class="btn btn-default" id="cancel-btn">CANCEL</button>
+		</span>
+		<p></p>
+		<label class="detail_label">Type: </label><label id="type_label" class="detail_label">{{ tool.tool_type }}</label><input hidden id="type_input" type="text" name="type"></br>
+		<label class="detail_label">Model: </label><label id="model_label" class="detail_label">{{ tool.model }}</label><input hidden id="model_input" type="text" name="model"></br>
+		<label class="detail_label">Manufacturer: </label><label id="manufacturer_label" class="detail_label">{{ tool.manufacturer }}</label><input hidden id="manufacturer_input" type="text" name="manufacturer"></br>
+		<label class="detail_label">Price: </label><label id="price_label" class="detail_label">{{ tool.price }}</label><input hidden id="price_input" type="text" name="price"></br>
+	</div>
+	<h3 hidden id="element_id">{{ tool.id }}</h3>
+	<script src="{% static 'javascript/tool_updater.js' %}"></script>
+{% endblock %}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

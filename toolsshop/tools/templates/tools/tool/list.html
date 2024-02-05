@@ -1,0 +1,66 @@
+{% extends "tools/base.html" %}
+{% load static %}
+
+{% block content %}
+	<div id="main" class="contact-list">
+		<h3 id="header">Tools list</h3>
+
+		<table>
+			<tr>
+			  <th>Type</th>
+			  <th>Model</th>
+			  <th>Link to details</th>
+			</tr>
+
+			{% for tool in tools %}
+
+			<tr>
+				<td>{{ tool.tool_type }}</td>
+				<td>{{ tool.model }}</td>
+				<td><a href="{{ tool.get_absolute_url }}">Tool details</a></td>
+			</tr>
+
+			{% endfor %}
+
+		</table>
+
+	</div>
+{% endblock %}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
