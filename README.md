@@ -1,4 +1,4 @@
-This Django application is tools shop catalogue. List view displays all the tools. It also contains the links to particular tools sites. Detail view contains Edit button. After clicking it user is able to update database record regarding chosen tool. The choice is affirmed by clicking Save button. After clicking it, JS script is updating the database via Django rest framework.
+This Django application is tools shop catalogue. List view displays all the tools. It also contains the links to particular tools sites. Detail view contains Edit button. After clicking it, user is able to update database record regarding chosen tool. The choice is affirmed by clicking Save button. After clicking it, JS script is updating the database via Django rest framework.
 
 Prerequisites:
 - Python 3.9.7,
